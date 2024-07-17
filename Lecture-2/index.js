@@ -10,6 +10,10 @@ app.get('/',(req,res)=>{
 app.get('/login',(req,res) =>{
     res.send('<h1>Please Log in</h1>')
 })
+app.get('/logout',(req,res) =>{
+    res.send('<h1>Please Log Out</h1>')
+})
+
 app.listen(process.env.PORT ,()=>{
-    console.log(`Port is runing on `);
+    console.log(`Port is runing on ${process.env.PORT}`);
 })
